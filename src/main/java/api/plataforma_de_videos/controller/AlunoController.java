@@ -41,7 +41,7 @@ public class AlunoController {
     @Transactional
     public ResponseEntity atualizar(@RequestBody @Valid DadosAtualizacaoAluno dados) {
         var aluno = repository.getReferenceById(dados.id());
-        aluno.atualiasInformacoesAluno(dados);
+        aluno.atualizaInformacoesAluno(dados);
 
         return ResponseEntity.ok(new DadosDetalhamentoAluno(aluno));
     }
