@@ -15,7 +15,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
 @RequestMapping("coordenador")
-@CrossOrigin(origins = "*",maxAge = 3600)
+@CrossOrigin(origins = "*")
 public class CoordenadorController {
     @Autowired
     private CoordenadorRepository repository;
